@@ -1,50 +1,67 @@
 @import url("fonts/Magistral/stylesheet.css");
 
-:root {
+
+body {
+  margin: 0;
+  padding: 0;
   font-family: Magistral, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
   font-size: 4.2em;
   line-height: 1.1;
+  white-space: wrap;
+}
+
+.App {
+  width: 98%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_container {
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_container img {
+  width: 100%;
+  object-fit: cover;
+
 }
 
 
+@media screen and (max-width: 420px) {
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  .App {
+    width: 100%;
+    max-width: 100%;
+   
+
   }
-  
+
+  h1 {
+    font-size: 2.4em;
+    line-height: 1.1;
+  }
+
+  .image_container {
+    width: 100%;
+    height: 400px;
+  }
+
+ 
 }
+  
+
+
